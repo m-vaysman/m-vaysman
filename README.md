@@ -1,12 +1,16 @@
 ## Michael Vaysman
 
-C#/.NET engineer, 17 years, embedded **on** trading desks rather than adjacent to them —
-Merrill Lynch, Société Générale, Avenue Capital, Balyasny, Alphadyne, Ellington.
+C#/.NET engineer, 17 years in capital markets — time spent both **on** trading desks and
+inside engineering teams. Merrill Lynch, Société Générale, Avenue Capital, Balyasny,
+Alphadyne, Ellington.
 
-The work is usually the same shape: a desk has a process that breaks, doesn't scale, or
-"can't be automated," and I build the thing that fixes it. Orphaned $1B swap book with no
-ops support. 80,000 lines of front-office VBA that needed to become a maintainable C#
-add-in. Voice trades getting hand-keyed into the OMS at two hours a day per trader.
+Desk-side, that meant owning the problem outright: an orphaned $1B total-return swap book
+that ops wouldn't support, or 80,000 lines of front-office VBA that had to become a
+maintainable C# add-in. On engineering teams it meant the work underneath — build and
+release pipelines, data warehousing, moving a 15-year SVN repo onto Bitbucket and
+TeamCity and cutting deployment time 70%.
+
+Having done both, I can usually tell which problem a desk actually has.
 
 **Domain** — bank debt, CLOs, total-return swaps, CDS, securities lending and repo,
 front-to-back trade lifecycle.
