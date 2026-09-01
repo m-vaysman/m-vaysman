@@ -71,7 +71,7 @@ home IP, TLS terminated at the edge.
 | **[2nd Grade Spelling Stars](https://words.cobblerhill.net)** | Study, type, quiz, streaks. Built for my son. On an iPad he writes the word by hand with a pen; OCR reads it back and marks it right or wrong. Good enough for a spelling list, not a research project. |
 | **[Tetris Duel](https://tetris.cobblerhill.net)** | Solo, local 2-player, online multiplayer, leaderboards. |
 | **[Block Bash](https://bbash.cobblerhill.net)** | Grid puzzle — combos, palettes, a global top 50. |
-| **Kids chatroom** — family only, no public link | Skibidi-themed real-time chat the kids actually use. WebSockets, room cap, rate limits, mini-games. An AI bot talks in the room, and a command turns a description into a generated image via OpenAI and posts it back. A moderation model hosted on Groq screens messages for profanity and unintended malice before they go out. |
+| **Kids chatroom** — family only, no public link | latest kids themed real-time chat the kids actually use. WebSockets, room cap, rate limits, mini-games. An AI bot talks in the room, and a command turns a description into a generated image via OpenAI and posts it back. A moderation model hosted on Groq screens messages for profanity and unintended malice before they go out. |
 
 ---
 
