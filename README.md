@@ -40,6 +40,17 @@ libraries. Happy to walk through any of it.
 
 ---
 
+### Options as types
+
+An experiment in pushing model correctness onto the compiler: every symbol in
+Black-Scholes gets its own C# type, so the notation from the papers survives and
+swapping volatility for the rate stops compiling. It half worked, which is the
+interesting part.
+
+[Repo](https://github.com/m-vaysman/options-as-types) &nbsp;·&nbsp; [Writeup](https://m-vaysman.github.io/options-as-types/)
+
+---
+
 ### Homelab that ships
 
 Kids ask. I deliver. The apps are vibe-coded.
