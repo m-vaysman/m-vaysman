@@ -5,7 +5,7 @@ inside engineering teams. Merrill Lynch, Société Générale, Avenue Capital, B
 Alphadyne, Ellington.
 
 Desk-side, that meant owning the problem outright: an orphaned $1B total-return swap book
-that ops wouldn't support, or 80,000 lines of front-office VBA that had to become a
+that ops wouldn't support, or 80,000 lines of front-office code that had to become a
 maintainable C# add-in. On engineering teams it meant the work underneath — build and
 release pipelines, data warehousing, moving a 15-year SVN repo onto Bitbucket and
 TeamCity and cutting deployment time 70%.
