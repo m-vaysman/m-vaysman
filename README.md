@@ -51,7 +51,7 @@ interesting part.
 
 ---
 
-### The model will open the class
+### CLASS OPEN FOR EXTENSION CLOSED FOR MODIFICATION AGENT SKILL
 
 Coding agents know Open/Closed and break it anyway: the shortest path to a finished
 ticket is to open the class that already works. A real EF Core change, adding
