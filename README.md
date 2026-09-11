@@ -53,10 +53,7 @@ interesting part.
 
 ### CLASS OPEN FOR EXTENSION CLOSED FOR MODIFICATION AGENT SKILL
 
-Coding agents know Open/Closed and break it anyway: the shortest path to a finished
-ticket is to open the class that already works. A real EF Core change, adding
-PostgreSQL beside SQL Server, made with the shipped classes locked. The framework
-already had the seam; the agent had to be stopped long enough to find it.
+Forces coding agents to extend shipped code rather than edit it. New behavior goes through existing seams; locked classes stay untouched. Smaller diffs, fewer regressions, less architectural drift.
 
 [Skill](https://github.com/m-vaysman/skills-and-prompts/tree/main/skills) &nbsp;·&nbsp; [Writeup](https://m-vaysman.github.io/skills-and-prompts/the-model-will-open-the-class/)
 
