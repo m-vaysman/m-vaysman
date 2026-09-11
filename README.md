@@ -51,6 +51,17 @@ interesting part.
 
 ---
 
+### The model will open the class
+
+Coding agents know Open/Closed and break it anyway: the shortest path to a finished
+ticket is to open the class that already works. A real EF Core change, adding
+PostgreSQL beside SQL Server, made with the shipped classes locked. The framework
+already had the seam; the agent had to be stopped long enough to find it.
+
+[Skill](https://github.com/m-vaysman/skills-and-prompts/tree/main/skills) &nbsp;·&nbsp; [Writeup](https://m-vaysman.github.io/skills-and-prompts/the-model-will-open-the-class/)
+
+---
+
 ### Homelab that ships
 
 Kids ask. I deliver. The apps are vibe-coded.
