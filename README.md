@@ -20,6 +20,45 @@ SignalR · Excel-DNA · TeamCity, Azure DevOps, SSDT.
 
 Also run a home server — kids ask, I deliver, the apps are vibe-coded.
 
+<!-- RecDiffy feature block for github.com/m-vaysman profile README -->
+
+<p align="center">
+  <a href="https://github.com/m-vaysman/recdiffy.net">
+    <img alt="RecDiffy.NET" src="https://raw.githubusercontent.com/m-vaysman/recdiffy.net/main/RecDiffy.NET/resources/logos/columns-dark.jpg" width="520" />
+  </a>
+</p>
+
+### [RecDiffy.NET](https://github.com/m-vaysman/recdiffy.net) — reconcile two datasets and explain every match, break, and unmatched row
+
+[![CI](https://github.com/m-vaysman/recdiffy.net/actions/workflows/ci.yml/badge.svg)](https://github.com/m-vaysman/recdiffy.net/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/m-vaysman/recdiffy.net/blob/main/LICENSE)
+[![.NET 10](https://img.shields.io/badge/.NET-10-512BD4?logo=dotnet&logoColor=white)](https://github.com/m-vaysman/recdiffy.net/blob/main/RecDiffy.NET/global.json)
+[![Status: Pre-release](https://img.shields.io/badge/status-pre--release-orange)](https://github.com/m-vaysman/recdiffy.net)
+
+A general-purpose **.NET** reconciliation and diffing library. Use it when records from two systems are the same activity underneath but disagree on identifiers, formatting, or grouping — warehouse bins vs book inventory, internal trades vs broker files, and the same class of problem elsewhere.
+
+Pipeline: **Normalize → Consolidate → Match → Compare → Explain**. Matching decides which rows belong together; comparison decides whether their fields agree (a match can still contain a break).
+
+**Status: Pre-release.** The library builds and tests on `main`, CI packs `1.1.0-preview.*` to GitHub Packages, and the release workflow is ready for a `vX.Y.Z` tag — but there is **no GitHub Release yet**, **no tags**, and **nothing on nuget.org**. Treat it as early, honest preview territory, not a finished product.
+
+#### Where it stands
+
+**Done**
+- Core `RecDiffy` library + `RecDiffy.RulePacks.Trading` on .NET 10 (AOT/trimmable)
+- Documented API and a runnable [Samples](https://github.com/m-vaysman/recdiffy.net/tree/main/RecDiffy.NET/src/RecDiffy.Samples) project
+- Behavior tests + green CI on `main`
+- MIT license, architecture writeup, preview/release automation
+
+**In progress**
+- Preview publish decision and launch checklist (open issues on the repo)
+- Onboarding / real-world evaluator feedback
+
+**Not yet**
+- Public nuget.org package
+- Tagged stable release
+
+**Try it:** [github.com/m-vaysman/recdiffy.net](https://github.com/m-vaysman/recdiffy.net) · [run the samples](https://github.com/m-vaysman/recdiffy.net/tree/main/RecDiffy.NET/src/RecDiffy.Samples)
+
 ---
 
 ### Cobbler Hill Technologies
