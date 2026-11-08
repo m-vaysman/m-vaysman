@@ -70,7 +70,7 @@ rough edges are still in it.
 
 | Repo | What it is |
 |---|---|
-| **[RecDiffy](https://github.com/m-vaysman/recdiffy.net)** | .NET 10 reconciliation library: compares two datasets and explains every match, break, and unmatched row. Pre-release on NuGet, with a trading rule pack. |
+| **[RecDiffy](https://github.com/m-vaysman/recdiffy.net)** | .NET 10 reconciliation library: compares two datasets and explains every match, break, and unmatched row. Pre-release, with a trading rule pack. |
 | **[MarketData.DB](https://github.com/m-vaysman/MarketData.DB)** | SQL Server warehouse for prices, quotes, ETF holdings, SEC 13F filings and Treasury curves. Range partitioning across physical volumes, clustered columnstore, In-Memory OLTP, and a SQL CLR aggregate — versioned as an SSDT project, deployed as a dacpac. |
 | **[omsloans](https://github.com/m-vaysman/omsloans)** | WPF (.NET 8) MVVM order management system for syndicated loan trading and operations, on EF Core 9 + SQL Server. |
 | **[cobbler.options](https://github.com/m-vaysman/cobbler.options)** | Options analytics in C#. |
