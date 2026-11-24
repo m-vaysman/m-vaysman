@@ -28,36 +28,57 @@ Also run a home server — kids ask, I deliver, the apps are vibe-coded.
   </a>
 </p>
 
-### [RecDiffy.NET](https://github.com/m-vaysman/recdiffy.net) — reconcile two datasets and explain every match, break, and unmatched row
+### [RecDiffy.NET](https://github.com/m-vaysman/recdiffy.net)
 
-[![CI](https://github.com/m-vaysman/recdiffy.net/actions/workflows/ci.yml/badge.svg)](https://github.com/m-vaysman/recdiffy.net/actions/workflows/ci.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/m-vaysman/recdiffy.net/blob/main/LICENSE)
-[![.NET 10](https://img.shields.io/badge/.NET-10-512BD4?logo=dotnet&logoColor=white)](https://github.com/m-vaysman/recdiffy.net/blob/main/RecDiffy.NET/global.json)
-[![Status: Pre-release](https://img.shields.io/badge/status-pre--release-orange)](https://github.com/m-vaysman/recdiffy.net)
+An open-source, general-purpose .NET reconciliation engine for matching, comparing and
+explaining differences between datasets from independent systems.
 
-A general-purpose **.NET** reconciliation and diffing library. Use it when records from two systems are the same activity underneath but disagree on identifiers, formatting, or grouping — warehouse bins vs book inventory, internal trades vs broker files, and the same class of problem elsewhere.
+Designed for situations where records represent the same underlying activity but differ
+in identifiers, formats, granularity or grouping — including trades, positions, cash
+balances, settlements, inventory and accounting records.
 
-Pipeline: **Normalize → Consolidate → Match → Compare → Explain**. Matching decides which rows belong together; comparison decides whether their fields agree (a match can still contain a break).
+Reconciliation behavior is defined through configurable JSON profiles or a strongly
+typed, fluent C# API. The core engine is domain-independent, with extensible
+normalization rules and specialized trading support.
 
-**Status: Pre-release.** The library builds and tests on `main`, CI packs `1.1.0-preview.*` to GitHub Packages, and the release workflow is ready for a `vX.Y.Z` tag — but there is **no GitHub Release yet**, **no tags**, and **nothing on nuget.org**. Treat it as early, honest preview territory, not a finished product.
+**Pipeline:** Normalize → Consolidate → Match → Compare → Explain
+
+Matching establishes which records belong together. Comparison determines whether their
+values agree. A successful match does not imply the absence of a break.
+
+The engine emphasizes deterministic results, explicit matching policies, configurable
+tolerances, traceable decisions and the preservation of unresolved differences.
+
+**Status:** Stable release. The public API has been stable since v1.2.0. Packages are
+available on NuGet.org, with ongoing development and preview releases for new
+capabilities. Supports .NET 8 and .NET 10.
 
 #### Where it stands
 
-**Done**
-- Core `RecDiffy` library + `RecDiffy.RulePacks.Trading` on .NET 10 (AOT/trimmable)
-- Documented API and a runnable [Samples](https://github.com/m-vaysman/recdiffy.net/tree/main/RecDiffy.NET/src/RecDiffy.Samples) project
-- Behavior tests + green CI on `main`
-- MIT license, architecture writeup, preview/release automation
+**Available**
+- Profile-driven, multi-pass reconciliation engine
+- Fluent C# API and declarative JSON profiles
+- Record normalization, lifecycle consolidation and grouped matching
+- Field-level comparison, configurable tolerances and break explanations
+- CSV and Excel ingestion
+- Formatted Excel reports, DataTables and HTML output
+- Trading-specific normalization rule pack
+- Public NuGet packages and automated release workflows
+- Browser-based demonstration and scheduled reconciliations of public financial datasets
+- Extensive automated testing, performance benchmarks and static analysis
+- Native AOT host, developer documentation, runnable samples and AI-agent documentation
+- MIT license
 
-**In progress**
-- Preview publish decision and launch checklist (open issues on the repo)
-- Onboarding / real-world evaluator feedback
+**Preview and active development**
+- Excel add-in
+- FIX protocol ingestion and reconciliation scenarios
+- Incremental batch reconciliation and snapshots
+- Matching enhancements and large-scale parallel reconciliation
+- Blind profile discovery and external dataset evaluation
 
-**Not yet**
-- Public nuget.org package
-- Tagged stable release
-
-**Try it:** [github.com/m-vaysman/recdiffy.net](https://github.com/m-vaysman/recdiffy.net) · [run the samples](https://github.com/m-vaysman/recdiffy.net/tree/main/RecDiffy.NET/src/RecDiffy.Samples)
+RecDiffy is an embeddable reconciliation engine rather than a complete operational
+workflow platform. It provides the reconciliation logic and explainable results for
+developers building their own applications, controls and operational tools.
 
 ---
 
